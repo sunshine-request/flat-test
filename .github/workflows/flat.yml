@@ -15,3 +15,13 @@ jobs:
           deno-version: v1.10.x
       - name: Check out repo
         uses: actions/checkout@v2
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.ashevillenc.gov/government/city-council-agenda/
+          downloaded_filename: agenda.html
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://drive.google.com/uc?export=download&id=1SoYK5-5JEP7XCm4nIbxaVjuyiSxu5zGU
+          downloaded_filename: 8weekagenda.pdf
