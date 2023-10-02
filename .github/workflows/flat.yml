@@ -25,3 +25,8 @@ jobs:
         with:
           http_url: https://drive.google.com/uc?export=download&id=1SoYK5-5JEP7XCm4nIbxaVjuyiSxu5zGU
           downloaded_filename: 8weekagenda.pdf
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://data-avl.opendata.arcgis.com/datasets/4d96bf8fbad640edbe124fe7185ba670_0.csv
+          downloaded_filename: salary_data.csv
