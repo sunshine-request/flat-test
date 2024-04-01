@@ -49,12 +49,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='avl-laravel-mix-css' href='https://www.ashevillenc.gov/wp-content/themes/avl/dist/styles/main.css?ver=1711891634' type='text/css' media='all' />
+<link rel='stylesheet' id='wpfront-notification-bar-css' href='https://www.ashevillenc.gov/wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.min.css?ver=3.4.01231' type='text/css' media='all' />
+<link rel='stylesheet' id='avl-laravel-mix-css' href='https://www.ashevillenc.gov/wp-content/themes/avl/dist/styles/main.css?ver=1711935303' type='text/css' media='all' />
 <link rel='stylesheet' id='algolia-autocomplete-css' href='https://www.ashevillenc.gov/wp-content/plugins/wp-search-with-algolia/css/algolia-autocomplete.css?ver=2.7.1' type='text/css' media='all' />
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" id="popper-js-js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" id="bootstrap-js-js"></script>
+<script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.min.js?ver=3.4.01231" id="wpfront-notification-bar-js"></script>
 <link rel="https://api.w.org/" href="https://www.ashevillenc.gov/wp-json/" /><link rel="alternate" type="application/json" href="https://www.ashevillenc.gov/wp-json/wp/v2/pages/1409" /><link rel='shortlink' href='https://www.ashevillenc.gov/?p=1409' />
 <link rel="alternate" type="application/json+oembed" href="https://www.ashevillenc.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ashevillenc.gov%2Fgovernment%2Fcity-council-meeting-materials%2F" />
 <link rel="alternate" type="text/xml+oembed" href="https://www.ashevillenc.gov/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ashevillenc.gov%2Fgovernment%2Fcity-council-meeting-materials%2F&#038;format=xml" />
@@ -6027,7 +6029,90 @@ Mailing address: PO Box 7148, Asheville, NC 28802<br />
 
 </div> <!-- #page -->
 
-		<script>
+                <style type="text/css">
+                #wpfront-notification-bar, #wpfront-notification-bar-editor            {
+            background: #4713d6;
+            background: -moz-linear-gradient(top, #4713d6 0%, #4713d6 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4713d6), color-stop(100%,#4713d6));
+            background: -webkit-linear-gradient(top, #4713d6 0%,#4713d6 100%);
+            background: -o-linear-gradient(top, #4713d6 0%,#4713d6 100%);
+            background: -ms-linear-gradient(top, #4713d6 0%,#4713d6 100%);
+            background: linear-gradient(to bottom, #4713d6 0%, #4713d6 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4713d6', endColorstr='#4713d6',GradientType=0 );
+            background-repeat: no-repeat;
+                        }
+            #wpfront-notification-bar div.wpfront-message, #wpfront-notification-bar-editor.wpfront-message            {
+            color: #ffffff;
+                        }
+            #wpfront-notification-bar a.wpfront-button, #wpfront-notification-bar-editor a.wpfront-button            {
+            background: #7a767a;
+            background: -moz-linear-gradient(top, #7a767a 0%, #7a767a 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7a767a), color-stop(100%,#7a767a));
+            background: -webkit-linear-gradient(top, #7a767a 0%,#7a767a 100%);
+            background: -o-linear-gradient(top, #7a767a 0%,#7a767a 100%);
+            background: -ms-linear-gradient(top, #7a767a 0%,#7a767a 100%);
+            background: linear-gradient(to bottom, #7a767a 0%, #7a767a 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a767a', endColorstr='#7a767a',GradientType=0 );
+
+            color: #ffffff;
+            }
+            #wpfront-notification-bar-open-button            {
+            background-color: #2b02cf;
+            right: 10px;
+                        }
+            #wpfront-notification-bar-open-button.top                {
+                background-image: url(https://www.ashevillenc.gov/wp-content/plugins/wpfront-notification-bar/images/arrow_down.png);
+                }
+
+                #wpfront-notification-bar-open-button.bottom                {
+                background-image: url(https://www.ashevillenc.gov/wp-content/plugins/wpfront-notification-bar/images/arrow_up.png);
+                }
+                #wpfront-notification-bar-table, .wpfront-notification-bar tbody, .wpfront-notification-bar tr            {
+                        }
+            #wpfront-notification-bar div.wpfront-close            {
+            border: 1px solid #2b02cf;
+            background-color: #2b02cf;
+            color: #ebebeb;
+            }
+            #wpfront-notification-bar div.wpfront-close:hover            {
+            border: 1px solid #2b02cf;
+            background-color: #2b02cf;
+            }
+             #wpfront-notification-bar-spacer { display:block; }#wpfront-notification-bar a.wpfront-button { font-weight: lighter; border: 1px solid #000000; } #wpfront-notification-bar a.wpfront-button:hover { text-decoration: underline; }                </style>
+                            <div id="wpfront-notification-bar-spacer" class="wpfront-notification-bar-spacer  wpfront-fixed-position  ">
+                <div id="wpfront-notification-bar-open-button" aria-label="reopen" role="button" class="wpfront-notification-bar-open-button hidden top wpfront-bottom-shadow"></div>
+                <div id="wpfront-notification-bar" class="wpfront-notification-bar wpfront-fixed wpfront-fixed-position load top wpfront-bottom-shadow ">
+                                            <div aria-label="close" class="wpfront-close">X</div>
+                                         
+                            <table id="wpfront-notification-bar-table" border="0" cellspacing="0" cellpadding="0" role="presentation">                        
+                                <tr>
+                                    <td>
+                                     
+                                    <div class="wpfront-message wpfront-div">
+                                        <p><b>Code Purple in effect April 3 </b></p>                                    </div>
+                                                       
+                                        <div class="wpfront-div">
+                                                                                                                                        <a class="wpfront-button" href="https://www.ashevillenc.gov/service/cold-weather-emergency-shelter/"  target="_self" ><b>Learn More</b></a>
+                                                                                                                                    </div>                                   
+                                                                                                       
+                                    </td>
+                                </tr>              
+                            </table>
+                            
+                                    </div>
+            </div>
+            
+            <script type="text/javascript">
+                function __load_wpfront_notification_bar() {
+                    if (typeof wpfront_notification_bar === "function") {
+                        wpfront_notification_bar({"position":1,"height":0,"fixed_position":true,"animate_delay":0,"close_button":true,"button_action_close_bar":false,"auto_close_after":0,"display_after":0,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":false,"keep_closed_for":7,"position_offset":0,"display_scroll":false,"display_scroll_offset":100,"keep_closed_cookie":"wpfront-notification-bar-keep-closed","log":false,"id_suffix":"","log_prefix":"[WPFront Notification Bar]","theme_sticky_selector":"","set_max_views":false,"max_views":0,"max_views_for":0,"max_views_cookie":"wpfront-notification-bar-max-views"});
+                    } else {
+                                    setTimeout(__load_wpfront_notification_bar, 100);
+                    }
+                }
+                __load_wpfront_notification_bar();
+            </script>
+            		<script>
 		( function ( body ) {
 			'use strict';
 			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
@@ -6293,7 +6378,7 @@ Mailing address: PO Box 7148, Asheville, NC 28802<br />
       window.location = "https://www.algolia.com/?utm_source=WordPress&utm_medium=extension&utm_content=" + window.location.hostname + "&utm_campaign=poweredby";
     });
   });
-</script><script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/plugins/asheville-custom-wp-scripts/build-sitewide/sitewide.js?ver=1711891633" id="asheville-scripts-js-sitewide-js"></script>
+</script><script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/plugins/asheville-custom-wp-scripts/build-sitewide/sitewide.js?ver=1711935301" id="asheville-scripts-js-sitewide-js"></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
@@ -6301,9 +6386,9 @@ Mailing address: PO Box 7148, Asheville, NC 28802<br />
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6" id="wp-escape-html-js"></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/dist/element.min.js?ver=ed1c7604880e8b574b40" id="wp-element-js"></script>
-<script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/plugins/asheville-custom-wp-scripts/build-render-feed/RenderFeed.js?ver=1711891633" id="asheville-scripts-js-render-feed-js"></script>
+<script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/plugins/asheville-custom-wp-scripts/build-render-feed/RenderFeed.js?ver=1711935301" id="asheville-scripts-js-render-feed-js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" id="fancybox-js"></script>
-<script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/themes/avl/dist/js/blocks.js?ver=1711891634" id="blocks-js"></script>
+<script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/themes/avl/dist/js/blocks.js?ver=1711935303" id="blocks-js"></script>
 <script src='https://www.ashevillenc.gov/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js'></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
 <script src='https://www.ashevillenc.gov/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js'></script>
@@ -6318,6 +6403,6 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/plugins/wp-search-with-algolia/js/autocomplete-noconflict.js?ver=2.7.1" id="algolia-autocomplete-noconflict-js"></script>
 <script type="text/javascript" src="https://www.ashevillenc.gov/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.15.5" id="smush-lazy-load-js"></script>
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-1be9e359be8af6190a3","applicationID":"1016353821","transactionName":"MVAAYhADDUpUUUJaXQgaI1UWCwxXGkJXVFc=","queueTime":0,"applicationTime":571,"atts":"HRcDFFgZHkQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-1be9e359be8af6190a3","applicationID":"1016353821","transactionName":"MVAAYhADDUpUUUJaXQgaI1UWCwxXGkJXVFc=","queueTime":0,"applicationTime":782,"atts":"HRcDFFgZHkQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 
 </html>
