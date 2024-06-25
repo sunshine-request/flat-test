@@ -33,11 +33,6 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://data-avl.opendata.arcgis.com/datasets/4d96bf8fbad640edbe124fe7185ba670_0.csv
-          downloaded_filename: salary_data.csv
-      - name: Fetch data
-        uses: githubocto/flat@v3
-        with:
           http_url: https://data-avl.opendata.arcgis.com/datasets/38bdfa06548a45bc9c89c7dddcfc5f31_0.csv
           downloaded_filename: apd_arrests.csv
 
