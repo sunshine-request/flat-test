@@ -3,8 +3,6 @@ on:
   push:
     paths:
       - .github/workflows/flat.yml
-  schedule:
-    - cron: 0 * * * *
 jobs:
   scheduled:
     runs-on: ubuntu-latest
